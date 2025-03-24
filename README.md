@@ -19,6 +19,31 @@ Bu uygulamada A* algoritması en hızlı yolu bulmak için kullanılmıştır. K
 BFS algoritmasını *en az aktarmalı yolu* bulmak için kullanmamızın sebebi istasyon yapısını *ağırlıksız* yani her yol eşit uzunlukta varsayarak incelemektir. Burada yolların maliyeti yani süresi veya uzunluğu ihmal edilmektedir. BFS algoritması *seviye seviye* inceleme yaptığı için en az sayıda durağa uğrayarak hedefe gitmeyi amaçlamaktadır.
 A* algoritması BFS'in temel prensibini geliştirmektedir. Bu algoritmada istasyon yapısı *ağırlıklı* olarak yani belli maliyetlerle oluşturulmaktadır. *Öncelikli kuyruk* yapısıyla en az maliyetli yol önce keşfedilmektedir bu da kısa yolları tercih ederek ilerleyeceğini belirtir. *En hızlı yolu* bulmak için ideal bir algoritmadır.
 ## Örnek kullanım ve test sonuçları
+### Örnek kullanım
+
+Python dosyasını çalıştırmak için terminale şu komutu yazınız:
+```
+python ElifnazAkkaynak_MetroSimulation.py
+```
+Program hazır olarak *AŞTİ-OSB, Batıkent-Keçiören ve Keçiören-AŞTİ* arasındaki en hızlı ve en az aktarmalı rotayı bulacaktır.
+
+### Test Sonuçları
+
+Algoritmaların doğru ve mantıklı çalışıp çalışmadığını kontrol etmek için yapılan aşağıdaki testler başarı ile sonuçlanmıştır.
+
+***Test 1:***
+1. Batıkent'ten AŞTİ'ye:
+
+En az aktarmalı rota: Batıkent -> Demetevler -> Gar -> Gar -> Sıhhiye -> Kızılay -> AŞTİ
+
+En hızlı rota (27 dakika): Batıkent -> Demetevler -> Demetevler -> Ulus -> Kızılay -> Kızılay -> AŞTİ
+
+***Test 2:***
+1. Sıhhiye'den OSB'ye:
+
+En az aktarmalı rota: Sıhhiye -> Kızılay -> Kızılay -> Ulus -> Demetevler -> OSB
+
+En hızlı rota (23 dakika): Sıhhiye -> Kızılay -> Kızılay -> Ulus -> Demetevler -> OSB
 
 
 ## Projeyi geliştirme fikirleri
